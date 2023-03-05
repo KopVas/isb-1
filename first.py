@@ -10,7 +10,7 @@ def main():
         tmp=alfavit.index(i)
         itog+=key[tmp]
     with open ("Ключ_к_тексту_1",mode='w+') as file:
-        file.write(dict(zip(alfavit,key)))
+        file.write(str(dict(zip(alfavit,key))))
 
     with open("Зашифрованный_текст_1",mode='w+') as file:
         file.write(itog)
